@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio ITIL - Synaptic Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Synaptic Digital</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="estrategia.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Estrategia
+                </a>
+                <a href="servicio.html" class="nav-link active">
+                    <i class="fas fa-cogs"></i> Servicio
+                </a>
+                <a href="seguridad.html" class="nav-link">
+                    <i class="fas fa-lock"></i> Seguridad
+                </a>
+                <a href="continuidad.html" class="nav-link">
+                    <i class="fas fa-sync-alt"></i> Continuidad
+                </a>
+                <a href="equipo.html" class="nav-link">
+                    <i class="fas fa-users"></i> Equipo
+                </a>
+                <a href="assets/proyecto-completo.pdf" class="btn-download" download>
+                    <i class="fas fa-download"></i> PDF
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1><i class="fas fa-concierge-bell"></i> Gestión de Servicio ITIL</h1>
+            <p>Cédula de Servicio, SLA, OLA y Matriz RACI</p>
+        </div>
+
+        <!-- Información General del Servicio -->
+        <section class="section">
+            <h2><i class="fas fa-info-circle"></i> Información General del Servicio</h2>
+            <div class="service-overview">
+                <div class="info-card">
+                    <h3><i class="fas fa-building"></i> Empresa</h3>
+                    <p><strong>Synaptic Digital</strong></p>
+                    <p>Departamento: Operaciones de Seguridad y Redes</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-network-wired"></i> Servicio</h3>
+                    <p><strong>Gestión Integral de Firewall y Seguridad Perimetral</strong></p>
+                    <p>Tipo: <span class="badge new">Nuevo</span></p>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-users"></i> Usuarios</h3>
+                    <p>Departamentos de TI de clientes empresariales</p>
+                    <p>Fuerza laboral remota (Home Office)</p>
+                    <p>Administradores de sistemas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Variantes del Servicio -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-layer-group"></i> Variantes del Servicio</h2>
+            <div class="variant-grid">
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <h3>Variante 1</h3>
+                        <span class="variant-badge basic">Básica</span>
+                    </div>
+                    <div class="variant-content">
+                        <h4>Gestión Básica</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Monitoreo de disponibilidad</li>
+                            <li><i class="fas fa-check"></i> Actualizaciones críticas</li>
+                            <li><i class="fas fa-check"></i> Soporte reactivo</li>
+                        </ul>
+                        <p class="variant-price">Desde $99/mes</p>
+                    </div>
+                </div>
+                
+                <div class="variant-card featured">
+                    <div class="variant-header">
+                        <h3>Variante 2</h3>
+                        <span class="variant-badge recommended">Recomendada</span>
+                    </div>
+                    <div class="variant-content">
+                        <h4>Gestión Avanzada</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Monitoreo proactivo 24/7</li>
+                            <li><i class="fas fa-check"></i> Revisión trimestral de reglas</li>
+                            <li><i class="fas fa-check"></i> Reportes de cumplimiento</li>
+                            <li><i class="fas fa-check"></i> Gestión de VPNs</li>
+                        </ul>
+                        <p class="variant-price">Desde $299/mes</p>
+                    </div>
+                </div>
+                
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <h3>Variante 3</h3>
+                        <span class="variant-badge mssp">MSSP</span>
+                    </div>
+                    <div class="variant-content">
+                        <h4>Servicio Gestionado Completo</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Operación total externa</li>
+                            <li><i class="fas fa-check"></i> Modelo de suscripción</li>
+                            <li><i class="fas fa-check"></i> SLA estricto garantizado</li>
+                            <li><i class="fas fa-check"></i> Respuesta 24/7</li>
+                        </ul>
+                        <p class="variant-price">Consultar precio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alcance del Servicio -->
+        <section class="section">
+            <h2><i class="fas fa-project-diagram"></i> Alcance del Servicio</h2>
+            <div class="scope-list">
+                <div class="scope-item">
+                    <div class="scope-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <div class="scope-content">
+                        <h4>Configuración e Implementación</h4>
+                        <p>Diseño de topología y reglas de filtrado (ACLs) personalizadas para cada cliente.</p>
+                    </div>
+                </div>
+                
+                <div class="scope-item">
+                    <div class="scope-icon">
+                        <i class="fas fa-user-lock"></i>
+                    </div>
+                    <div class="scope-content">
+                        <h4>Gestión de Accesos</h4>
+                        <p>Configuración de túneles VPN (Sitio a Sitio y Acceso Remoto) para usuarios móviles.</p>
+                    </div>
+                </div>
+                
+                <div class="scope-item">
+                    <div class="scope-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="scope-content">
+                        <h4>Monitoreo Proactivo 24/7</h4>
+                        <p>Supervisión de tráfico malicioso, intentos de intrusión y rendimiento del hardware.</p>
+                    </div>
+                </div>
+                
+                <div class="scope-item">
+                    <div class="scope-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="scope-content">
+                        <h4>Mantenimiento</h4>
+                        <p>Actualización de firmware y parches de seguridad para mitigar vulnerabilidades CVE conocidas.</p>
+                    </div>
+                </div>
+                
+                <div class="scope-item">
+                    <div class="scope-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <div class="scope-content">
+                        <h4>Respuesta a Incidentes</h4>
+                        <p>Análisis de logs para investigación forense y resolución de incidentes de conectividad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matriz RACI -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-table"></i> Matriz RACI de Responsabilidades</h2>
+            <div class="table-container">
+                <table class="raci-table">
+                    <thead>
+                        <tr>
+                            <th>Actividad / Rol</th>
+                            <th>Arquitecto Solución</th>
+                            <th>Gerente Seguridad</th>
+                            <th>Ing. Redes L2</th>
+                            <th>DevOps</th>
+                            <th>Mesa Servicio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Definición de Políticas de Firewall</td>
+                            <td class="raci-r">R</td>
+                            <td class="raci-a">A</td>
+                            <td class="raci-c">C</td>
+                            <td class="raci-i">I</td>
+                            <td class="raci-i">I</td>
+                        </tr>
+                        <tr>
+                            <td>Diseño de Topología de Red Segura</td>
+                            <td class="raci-r">R</td>
+                            <td class="raci-a">A</td>
+                            <td class="raci-c">C</td>
+                            <td class="raci-r">R</td>
+                            <td class="raci-i">I</td>
+                        </tr>
+                        <tr>
+                            <td>Alta/Baja/Modificación de Reglas (ACLs)</td>
+                            <td class="raci-a">A</td>
+                            <td class="raci-i">I</td>
+                            <td class="raci-a">A</td>
+                            <td class="raci-i">I</td>
+                            <td class="raci-r">R</td>
+                        </tr>
+                        <tr>
+                            <td>Configuración de Túneles VPN</td>
+                            <td class="raci-c">C</td>
+                            <td class="raci-i">I</td>
+                            <td class="raci-r">R</td>
+                            <td class="raci-c">C</td>
+                            <td class="raci-r">R</td>
+                        </tr>
+                        <tr>
+                            <td>Actualización de Firmware/Parches</td>
+                            <td class="raci-c">C</td>
+                            <td class="raci-i">I</td>
+                            <td class="raci-a">A</td>
+                            <td class="raci-r">R</td>
+                            <td class="raci-i">I</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="raci-legend">
+                <div class="legend-item">
+                    <span class="raci-badge r">R</span> = Responsable (ejecuta)
+                </div>
+                <div class="legend-item">
+                    <span class="raci-badge a">A</span> = Aprobador (valida)
+                </div>
+                <div class="legend-item">
+                    <span class="raci-badge c">C</span> = Consultado (experto)
+                </div>
+                <div class="legend-item">
+                    <span class="raci-badge i">I</span> = Informado (notificado)
+                </div>
+            </div>
+        </section>
+
+        <!-- SLA y OLA -->
+        <section class="section">
+            <h2><i class="fas fa-handshake"></i> Acuerdos de Nivel de Servicio</h2>
+            
+            <div class="sla-container">
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h3><i class="fas fa-user-check"></i> SLA - Usuarios Finales</h3>
+                    </div>
+                    <div class="sla-content">
+                        <div class="sla-item">
+                            <h4>Disponibilidad</h4>
+                            <p>99.9% Uptime Mensual para servicios de Firewall y VPN</p>
+                            <p class="sla-metric">Garantía de redundancia en configuraciones HA</p>
+                        </div>
+                        
+                        <div class="sla-item">
+                            <h4>Soporte y Respuesta</h4>
+                            <p>Atención 24/7 para incidentes de Prioridad 1</p>
+                            <p class="sla-metric">Tiempo de respuesta inicial < 15 minutos</p>
+                        </div>
+                        
+                        <div class="sla-item">
+                            <h4>Confidencialidad</h4>
+                            <p>Cifrado AES-256 en todos los túneles VPN</p>
+                            <p class="sla-metric">Política de "Cero Logs" de navegación</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sla-card">
+                    <div class="sla-header">
+                        <h3><i class="fas fa-cogs"></i> OLA - Acuerdos Operativos Internos</h3>
+                    </div>
+                    <div class="sla-content">
+                        <div class="sla-item">
+                            <h4>Infraestructura Firewall</h4>
+                            <p>Disponibilidad: 99.99%</p>
+                            <p class="sla-metric">Latencia agregada: < 10ms</p>
+                        </div>
+                        
+                        <div class="sla-item">
+                            <h4>Servicios VPN</h4>
+                            <p>Tasa de éxito de conexión: > 99%</p>
+                            <p class="sla-metric">Tiempo de reconexión: < 5 segundos</p>
+                        </div>
+                        
+                        <div class="sla-item">
+                            <h4>Gestión de Cambios</h4>
+                            <p>Implementación estándar: < 4 horas</p>
+                            <p class="sla-metric">Implementación emergencia: < 1 hora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Puntos de Contacto -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-address-book"></i> Puntos de Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4>Arquitecto de Solución</h4>
+                    <p>Treviño Hernández Jonathan</p>
+                    <p><i class="fas fa-envelope"></i> jtrevinoh@synaptic.com</p>
+                    <p><i class="fas fa-phone"></i> 55-1234-5678</p>
+                    <p class="contact-hours">9:00 a 18:00</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-avatar">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h4>Gerente de Seguridad</h4>
+                    <p>Peralta Moreno Rafael</p>
+                    <p><i class="fas fa-envelope"></i> rperaltam@synaptic.com</p>
+                    <p><i class="fas fa-phone"></i> 55-8765-4321</p>
+                    <p class="contact-hours">9:00 a 18:00</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-avatar">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4>Ingeniero de Redes</h4>
+                    <p>Cortés Velázquez Samuel A.</p>
+                    <p><i class="fas fa-envelope"></i> scortesv@synaptic.com</p>
+                    <p><i class="fas fa-phone"></i> 55-1122-3344</p>
+                    <p class="contact-hours urgent">24/7 (Guardias)</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="estrategia.html" class="btn-secondary">
+                <i class="fas fa-arrow-left"></i> Volver a Estrategia
+            </a>
+            <a href="seguridad.html" class="btn-primary">
+                Continuar a Seguridad <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Gestión de Servicio ITIL</h4>
+                <p>Cédula de Servicio | SLA | OLA | RACI</p>
+                <p>Synaptic Digital - Gobierno de TI</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2025 IPN - ESCOM 8CV2</p>
+                <p>Proyecto Académico</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

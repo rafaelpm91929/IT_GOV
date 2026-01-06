@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuidad - Synaptic Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Synaptic Digital</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="estrategia.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Estrategia
+                </a>
+                <a href="servicio.html" class="nav-link">
+                    <i class="fas fa-cogs"></i> Servicio
+                </a>
+                <a href="seguridad.html" class="nav-link">
+                    <i class="fas fa-lock"></i> Seguridad
+                </a>
+                <a href="continuidad.html" class="nav-link active">
+                    <i class="fas fa-sync-alt"></i> Continuidad
+                </a>
+                <a href="equipo.html" class="nav-link">
+                    <i class="fas fa-users"></i> Equipo
+                </a>
+                <a href="assets/proyecto-completo.pdf" class="btn-download" download>
+                    <i class="fas fa-download"></i> PDF
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1><i class="fas fa-first-aid"></i> Plan de Continuidad del Negocio</h1>
+            <p>BIA Operacional, Estrategias de Recuperación y Respuesta a Incidentes</p>
+        </div>
+
+        <!-- BIA Operacional -->
+        <section class="section">
+            <h2><i class="fas fa-chart-line"></i> BIA Operacional - Nivel Servicio</h2>
+            <div class="bia-operational">
+                <div class="bia-summary">
+                    <div class="bia-summary-item">
+                        <h4><i class="fas fa-clock"></i> MTD del Servicio</h4>
+                        <p class="bia-value critical">4 horas</p>
+                        <p>Después de este tiempo, la pérdida de clientes es inminente</p>
+                    </div>
+                    
+                    <div class="bia-summary-item">
+                        <h4><i class="fas fa-bolt"></i> RTO Global</h4>
+                        <p class="bia-value">30 minutos</p>
+                        <p>Para conectividad VPN (prioritario)</p>
+                    </div>
+                    
+                    <div class="bia-summary-item">
+                        <h4><i class="fas fa-database"></i> RPO Global</h4>
+                        <p class="bia-value">1 hora</p>
+                        <p>Para configuraciones y logs críticos</p>
+                    </div>
+                </div>
+                
+                <div class="bia-details">
+                    <h3><i class="fas fa-tasks"></i> Actividades Críticas</h3>
+                    <div class="activity-grid">
+                        <div class="activity-card">
+                            <div class="activity-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h4>Conectividad VPN</h4>
+                            <p>Garantizar túneles cifrados 24/7</p>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <div class="activity-icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <h4>Filtrado de Tráfico</h4>
+                            <p>Firewall y control perimetral</p>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h4>Autenticación</h4>
+                            <p>Validación de usuarios y accesos</p>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <div class="activity-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h4>Soporte Técnico</h4>
+                            <p>Atención continua a incidencias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activación y Gobierno -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-play-circle"></i> Activación y Gobierno</h2>
+            <div class="activation-container">
+                <div class="activation-card">
+                    <div class="activation-header">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Criterios de Activación</h3>
+                    </div>
+                    <div class="activation-content">
+                        <div class="criterion">
+                            <div class="criterion-icon">
+                                <i class="fas fa-signal"></i>
+                            </div>
+                            <div class="criterion-text">
+                                <h4>Caída de Red VPN</h4>
+                                <p>Más del 30% de la red VPN caída por más de 15 minutos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="criterion">
+                            <div class="criterion-icon">
+                                <i class="fas fa-hourglass-half"></i>
+                            </div>
+                            <div class="criterion-text">
+                                <h4>Alta Latencia</h4>
+                                <p>Latencia > 200ms sostenida por 15 minutos en múltiples regiones</p>
+                            </div>
+                        </div>
+                        
+                        <div class="criterion">
+                            <div class="criterion-icon">
+                                <i class="fas fa-user-ninja"></i>
+                            </div>
+                            <div class="criterion-text">
+                                <h4>Intrusión Confirmada</h4>
+                                <p>Detección de intrusión confirmada en servidores Core</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activation-card">
+                    <div class="activation-header">
+                        <h3><i class="fas fa-users-cog"></i> Comité de Continuidad</h3>
+                    </div>
+                    <div class="activation-content">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>Gerente de Seguridad</h4>
+                                <p>Rafael Peralta Moreno</p>
+                                <p class="role">Toma de decisión de Failover total</p>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>Arquitecto de Solución</h4>
+                                <p>Jonathan Treviño Hernández</p>
+                                <p class="role">Ejecución técnica de recuperación</p>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>Ingeniero de Redes</h4>
+                                <p>Samuel Cortés Velázquez</p>
+                                <p class="role">Comunicación con soporte y clientes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estrategias por Escenario -->
+        <section class="section">
+            <h2><i class="fas fa-chess-board"></i> Estrategias por Escenario</h2>
+            <div class="scenario-container">
+                <!-- Escenario 1 -->
+                <div class="scenario-card">
+                    <div class="scenario-header critical">
+                        <h3><i class="fab fa-aws"></i> Caída de Región Cloud</h3>
+                        <span class="scenario-tag">Crítico</span>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-bolt"></i> Acción Inmediata</h4>
+                            <p>Redirigir DNS a región secundaria (Ej. AWS US-West)</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-cogs"></i> Estrategia de Continuidad</h4>
+                            <p>Operar con capacidad reducida en región de respaldo</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-sync-alt"></i> Recuperación</h4>
+                            <p>Sincronizar logs y bases de datos al volver la región principal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Escenario 2 -->
+                <div class="scenario-card">
+                    <div class="scenario-header high">
+                        <h3><i class="fas fa-bomb"></i> Ataque DDoS Volumétrico</h3>
+                        <span class="scenario-tag">Alto</span>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-bolt"></i> Acción Inmediata</h4>
+                            <p>Activar mitigación DDoS con proveedor (Cloudflare/AWS Shield)</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-cogs"></i> Estrategia de Continuidad</h4>
+                            <p>Bloquear rangos de IP geográficos no esenciales</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-sync-alt"></i> Recuperación</h4>
+                            <p>Analizar patrón de ataque y ajustar reglas de firewall</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Escenario 3 -->
+                <div class="scenario-card">
+                    <div class="scenario-header high">
+                        <h3><i class="fas fa-database"></i> Corrupción de Base de Datos</h3>
+                        <span class="scenario-tag">Alto</span>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-bolt"></i> Acción Inmediata</h4>
+                            <p>Congelar altas nuevas; permitir acceso a sesiones activas en caché</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-cogs"></i> Estrategia de Continuidad</h4>
+                            <p>Restaurar último backup sano en instancia de "Solo Lectura"</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-sync-alt"></i> Recuperación</h4>
+                            <p>Validar integridad de datos y reactivar escritura</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Escenario 4 -->
+                <div class="scenario-card">
+                    <div class="scenario-header medium">
+                        <h3><i class="fas fa-bug"></i> Bug en Actualización de Software</h3>
+                        <span class="scenario-tag">Medio</span>
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-bolt"></i> Acción Inmediata</h4>
+                            <p>Ejecutar Rollback inmediato a versión anterior</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-cogs"></i> Estrategia de Continuidad</h4>
+                            <p>Bloquear descarga de actualización defectuosa en clientes</p>
+                        </div>
+                        
+                        <div class="scenario-phase">
+                            <h4><i class="fas fa-sync-alt"></i> Recuperación</h4>
+                            <p>Parchear bug en entorno Staging y liberar hotfix</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Backup y Pruebas -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-database"></i> Backup, Restauración y Pruebas</h2>
+            <div class="backup-container">
+                <div class="backup-policy">
+                    <div class="backup-header">
+                        <h3><i class="fas fa-save"></i> Política de Backup</h3>
+                    </div>
+                    <div class="backup-content">
+                        <div class="backup-item">
+                            <div class="backup-frequency">
+                                <i class="fas fa-history"></i>
+                                <h4>Cada 24 horas</h4>
+                            </div>
+                            <p>Respaldos automáticos de configuraciones de firewall</p>
+                        </div>
+                        
+                        <div class="backup-item">
+                            <div class="backup-frequency">
+                                <i class="fas fa-clock"></i>
+                                <h4>Cada 6 horas</h4>
+                            </div>
+                            <p>Snapshots de servidores críticos y bases de datos</p>
+                        </div>
+                        
+                        <div class="backup-item">
+                            <div class="backup-frequency">
+                                <i class="fas fa-database"></i>
+                                <h4>En tiempo real</h4>
+                            </div>
+                            <p>Replicación de bases de datos de usuarios y accesos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testing-policy">
+                    <div class="testing-header">
+                        <h3><i class="fas fa-vial"></i> Programa de Pruebas</h3>
+                    </div>
+                    <div class="testing-content">
+                        <div class="test-item">
+                            <div class="test-frequency">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h4>Trimestralmente</h4>
+                            </div>
+                            <p>Simulacros de Disaster Recovery (DR) completos</p>
+                            <ul class="test-details">
+                                <li>Caída simulada de nodo VPN principal</li>
+                                <li>Verificación de tiempo de conmutación (Failover)</li>
+                                <li>Integridad de sesiones de usuario</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="test-item">
+                            <div class="test-frequency">
+                                <i class="fas fa-calendar-week"></i>
+                                <h4>Mensualmente</h4>
+                            </div>
+                            <p>Pruebas de restauración de backups</p>
+                            <ul class="test-details">
+                                <li>Validación de integridad de datos</li>
+                                <li>Tiempos de restauración medidos</li>
+                                <li>Documentación de lecciones aprendidas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Canales de Comunicación -->
+        <section class="section">
+            <h2><i class="fas fa-comments"></i> Canales de Comunicación</h2>
+            <div class="comms-grid">
+                <div class="comm-card">
+                    <div class="comm-icon primary">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h4>Comunicación Externa</h4>
+                    <ul>
+                        <li><i class="fas fa-globe"></i> Dashboard de estado público</li>
+                        <li><i class="fas fa-envelope"></i> Notificaciones por correo</li>
+                        <li><i class="fas fa-sms"></i> Alertas SMS a clientes críticos</li>
+                    </ul>
+                </div>
+                
+                <div class="comm-card">
+                    <div class="comm-icon secondary">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Comunicación Interna</h4>
+                    <ul>
+                        <li><i class="fab fa-telegram"></i> Grupo seguro en Telegram (fuera de banda)</li>
+                        <li><i class="fas fa-mail-bulk"></i> Correo corporativo alterno</li>
+                        <li><i class="fas fa-phone"></i> Línea telefónica dedicada</li>
+                    </ul>
+                </div>
+                
+                <div class="comm-card">
+                    <div class="comm-icon tertiary">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h4>Documentación</h4>
+                    <ul>
+                        <li><i class="fas fa-book"></i> Manuales de procedimiento</li>
+                        <li><i class="fas fa-clipboard-list"></i> Checklists de activación</li>
+                        <li><i class="fas fa-history"></i> Bitácoras de incidentes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="seguridad.html" class="btn-secondary">
+                <i class="fas fa-arrow-left"></i> Volver a Seguridad
+            </a>
+            <a href="equipo.html" class="btn-primary">
+                Continuar al Equipo <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Continuidad del Negocio</h4>
+                <p>BIA Operacional | DR | Estrategias | Backup</p>
+                <p>Synaptic Digital - Gobierno de TI</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2025 IPN - ESCOM 8CV2</p>
+                <p>Proyecto Académico</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

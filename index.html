@@ -4,279 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synaptic Digital - Gobierno de TI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#" class="logo">
-                    <i class="fas fa-shield-alt"></i> Synaptic Digital
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Synaptic Digital</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home"></i> Inicio
                 </a>
-                <ul class="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#estrategia">Estrategia</a></li>
-                    <li><a href="#servicio">Servicio</a></li>
-                    <li><a href="#seguridad">Seguridad</a></li>
-                    <li><a href="#continuidad">Continuidad</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <a href="estrategia.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Estrategia
+                </a>
+                <a href="servicio.html" class="nav-link">
+                    <i class="fas fa-cogs"></i> Servicio
+                </a>
+                <a href="seguridad.html" class="nav-link">
+                    <i class="fas fa-lock"></i> Seguridad
+                </a>
+                <a href="continuidad.html" class="nav-link">
+                    <i class="fas fa-sync-alt"></i> Continuidad
+                </a>
+                <a href="equipo.html" class="nav-link">
+                    <i class="fas fa-users"></i> Equipo
+                </a>
+                <a href="assets/proyecto-completo.pdf" class="btn-download" download>
+                    <i class="fas fa-download"></i> PDF Completo
+                </a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <!-- Sección Inicio -->
-    <section id="inicio" class="hero">
+    <!-- Hero Section -->
+    <header class="hero">
         <div class="hero-content">
-            <h1>Gobierno de TI - Synaptic Digital</h1>
-            <p class="subtitle">Servicios VPN/Firewall gestionados con base en COBIT, ITIL e ISO 27000</p>
-            <p>Proyecto académico desarrollado en el Instituto Politécnico Nacional, Escuela Superior de Cómputo.</p>
-            <div class="cta-buttons">
-                <a href="#estrategia" class="btn btn-primary">Explorar Proyecto</a>
-                <a href="assets/Proyecto-IT-Gov.docx.pdf" class="btn btn-secondary" download>
-                    <i class="fas fa-download"></i> Descargar PDF
+            <h1>Gobierno de TI: Servicios VPN/Firewall</h1>
+            <p class="subtitle">Proyecto académico del IPN - ESCOM</p>
+            <p class="description">
+                Implementación de servicios gestionados de ciberseguridad alineados con COBIT, 
+                ITIL e ISO 27000 para el corredor comercial México-EE.UU.-Canadá.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyecto" class="btn-primary">
+                    <i class="fas fa-play-circle"></i> Ver Proyecto
+                </a>
+                <a href="equipo.html" class="btn-secondary">
+                    <i class="fas fa-user-tie"></i> Conoce al Equipo
                 </a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Ciberseguridad">
+            <div class="tech-icons">
+                <i class="fab fa-microsoft"></i>
+                <i class="fas fa-cloud"></i>
+                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-network-wired"></i>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Sección Estrategia -->
-    <section id="estrategia" class="section">
-        <div class="container">
-            <h2 class="section-title">Estrategia Corporativa</h2>
-            <p class="section-description">Alineación de TI con los objetivos de negocio mediante Balanced Scorecard y COBIT.</p>
-            
-            <div class="cards">
+    <!-- Sección Principal -->
+    <main class="container">
+        <section id="proyecto" class="section">
+            <h2><i class="fas fa-project-diagram"></i> Resumen del Proyecto</h2>
+            <div class="card-grid">
                 <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-chart-line"></i>
+                    <div class="card-icon" style="background-color: #4CAF50;">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>Balanced Scorecard</h3>
-                    <p>Metas corporativas en cuatro perspectivas: Financiera, Cliente, Procesos Internos, Aprendizaje y Crecimiento.</p>
-                    <ul>
-                        <li>Alcanzar 90% de satisfacción del cliente</li>
-                        <li>Mejorar margen bruto al 40%</li>
-                        <li>Certificar 2 procesos clave</li>
-                    </ul>
+                    <h3>Objetivo</h3>
+                    <p>Garantizar confidencialidad, integridad y disponibilidad de comunicaciones mediante túneles VPN cifrados y firewall gestionado.</p>
                 </div>
+                
                 <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-cogs"></i>
+                    <div class="card-icon" style="background-color: #2196F3;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visión</h3>
+                    <p>Ser la marca líder en ciberseguridad en Latinoamérica, proporcionando soluciones integrales y confiables.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon" style="background-color: #FF9800;">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Metas Corporativas</h3>
+                    <p>Alcanzar 90% satisfacción del cliente, 40% margen bruto y 60% ingresos recurrentes para Q4 2026.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon" style="background-color: #9C27B0;">
+                        <i class="fas fa-tasks"></i>
                     </div>
                     <h3>Metas de TI (COBIT)</h3>
-                    <p>Garantizar disponibilidad del 99.9%, latencia < 50ms, y automatización del 80% de tareas de primer nivel.</p>
-                    <ul>
-                        <li>Optimización de recursos en la nube</li>
-                        <li>Alta disponibilidad de túneles VPN</li>
-                        <li>Fortalecimiento de competencias técnicas</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Mapa Estratégico</h3>
-                    <p>Relación causa-efecto entre objetivos estratégicos, tácticos y operativos.</p>
-                    <ul>
-                        <li>Financiera → Cliente → Procesos → Aprendizaje</li>
-                        <li>Cascada de metas alineadas</li>
-                        <li>Indicadores clave de desempeño (KPIs)</li>
-                    </ul>
+                    <p>99.9% uptime, latencia < 50ms, MTTR ≤ 2h, 80% automatización de cambios de nivel 1.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección Servicio -->
-    <section id="servicio" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Diseño del Servicio (ITIL)</h2>
-            <p class="section-description">Cédula de servicio con SLA, OLA, RACI y niveles de calidad definidos.</p>
+        <!-- Sección de Documentos -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-file-alt"></i> Documentación del Proyecto</h2>
+            <div class="doc-grid">
+                <a href="estrategia.html" class="doc-card">
+                    <i class="fas fa-chess-board fa-3x"></i>
+                    <h4>Estrategia y Metas</h4>
+                    <p>Balanced Scorecard, COBIT, Mapa Estratégico</p>
+                    <span class="doc-link">Ver detalles <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="servicio.html" class="doc-card">
+                    <i class="fas fa-concierge-bell fa-3x"></i>
+                    <h4>Servicio ITIL</h4>
+                    <p>Cédula de servicio, SLA, OLA, Matriz RACI</p>
+                    <span class="doc-link">Ver detalles <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="seguridad.html" class="doc-card">
+                    <i class="fas fa-user-shield fa-3x"></i>
+                    <h4>Seguridad ISO 27000</h4>
+                    <p>Matriz de riesgos CID, BIA Táctico, Controles</p>
+                    <span class="doc-link">Ver detalles <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="continuidad.html" class="doc-card">
+                    <i class="fas fa-first-aid fa-3x"></i>
+                    <h4>Continuidad del Negocio</h4>
+                    <p>Plan DR, Estrategias, Backup, Recuperación</p>
+                    <span class="doc-link">Ver detalles <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección de Datos Clave -->
+        <section class="section">
+            <h2><i class="fas fa-key"></i> Datos Clave del Servicio</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime SLA</div>
+                    <div class="stat-desc">Disponibilidad mensual garantizada</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">< 50ms</div>
+                    <div class="stat-label">Latencia</div>
+                    <div class="stat-desc">Conexión de alta velocidad</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">≤ 2h</div>
+                    <div class="stat-label">MTTR Crítico</div>
+                    <div class="stat-desc">Tiempo de resolución máximo</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Soporte</div>
+                    <div class="stat-desc">Monitoreo y respuesta continua</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Synaptic Digital</h4>
+                <p>Proyecto de Gobierno de TI - 8CV2</p>
+                <p>Instituto Politécnico Nacional</p>
+                <p>Escuela Superior de Cómputo</p>
+            </div>
             
-            <div class="service-details">
-                <div class="service-item">
-                    <h3><i class="fas fa-handshake"></i> Acuerdos de Nivel de Servicio (SLA)</h3>
-                    <ul>
-                        <li><strong>Disponibilidad:</strong> 99.9% Uptime mensual</li>
-                        <li><strong>Soporte:</strong> Respuesta en < 15 min para incidentes críticos</li>
-                        <li><strong>Seguridad:</strong> Cifrado AES-256, política de "Cero Logs"</li>
-                    </ul>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-users-cog"></i> Matriz RACI</h3>
-                    <p>Definición clara de roles: Responsable, Aprobador, Consultado, Informado.</p>
-                    <p>Roles clave: Arquitecto de Solución, Gerente de Seguridad, Ingeniero de Redes, DevOps, Mesa de Servicio.</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-network-wired"></i> Infraestructura</h3>
-                    <p>Firewall NGFW, concentradores VPN, monitoreo con PRTG/Zabbix, servidores en la nube (AWS/Azure).</p>
-                </div>
+            <div class="footer-section">
+                <h4>Integrantes</h4>
+                <p>Samuel Alejandro Cortés Velázquez</p>
+                <p>Rafael Peralta Moreno</p>
+                <p>Jonathan Treviño Hernández</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección Seguridad -->
-    <section id="seguridad" class="section">
-        <div class="container">
-            <h2 class="section-title">Gestión de Riesgos y Seguridad</h2>
-            <p class="section-description">Enfoque basado en ISO 27000 para proteger la Confidencialidad, Integridad y Disponibilidad (CID).</p>
             
-            <div class="risk-matrix">
-                <h3>Matriz de Riesgos (CID)</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Activo</th>
-                            <th>Confidencialidad</th>
-                            <th>Integridad</th>
-                            <th>Disponibilidad</th>
-                            <th>Controles</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Servidores VPN</td>
-                            <td class="high">Alta</td>
-                            <td class="medium">Media</td>
-                            <td class="high">Alta</td>
-                            <td>Cifrado robusto, alta disponibilidad</td>
-                        </tr>
-                        <tr>
-                            <td>Firewall Central</td>
-                            <td class="medium">Media</td>
-                            <td class="high">Alta</td>
-                            <td class="high">Alta</td>
-                            <td>Respaldo de políticas, MFA, redundancia</td>
-                        </tr>
-                        <tr>
-                            <td>Base de Datos</td>
-                            <td class="high">Alta</td>
-                            <td class="high">Alta</td>
-                            <td class="high">Alta</td>
-                            <td>Cifrado en reposo, replicación, PAM</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="footer-section">
+                <h4>Servicio Evaluado</h4>
+                <p>Servicios VPN/Firewall</p>
+                <p>"Synaptic Digital"</p>
+                <p>IT Governance / Gobierno de TI</p>
             </div>
-
-            <div class="bia">
-                <h3>Análisis de Impacto al Negocio (BIA)</h3>
-                <div class="bia-items">
-                    <div class="bia-item">
-                        <h4>Operación de Red VPN y Firewall</h4>
-                        <p><strong>RTO:</strong> 30 min | <strong>RPO:</strong> 1 hora</p>
-                    </div>
-                    <div class="bia-item">
-                        <h4>Gestión de Cambios y Reglas</h4>
-                        <p><strong>RTO:</strong> 4 horas | <strong>RPO:</strong> 0 horas</p>
-                    </div>
-                    <div class="bia-item">
-                        <h4>Monitoreo y Defensa (SOC)</h4>
-                        <p><strong>RTO:</strong> 1 hora | <strong>RPO:</strong> 1 hora</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Continuidad -->
-    <section id="continuidad" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Plan de Continuidad</h2>
-            <p class="section-description">Estrategias para mantener el servicio ante interrupciones y desastres.</p>
             
-            <div class="continuity-content">
-                <div class="continuity-strategy">
-                    <h3><i class="fas fa-sync-alt"></i> Estrategias por Escenario</h3>
-                    <div class="scenario">
-                        <h4>Caída de Región Cloud</h4>
-                        <p>Redirigir DNS a región secundaria. Operar con capacidad reducida.</p>
-                    </div>
-                    <div class="scenario">
-                        <h4>Ataque DDoS Volumétrico</h4>
-                        <p>Activar mitigación DDoS con proveedor. Bloquear rangos IP no esenciales.</p>
-                    </div>
-                    <div class="scenario">
-                        <h4>Corrupción de Base de Datos</h4>
-                        <p>Restaurar último backup sano. Validar integridad de datos.</p>
-                    </div>
-                </div>
-                <div class="continuity-activation">
-                    <h3><i class="fas fa-play-circle"></i> Activación y Gobernanza</h3>
-                    <p><strong>Criterios de activación:</strong> Caída >30% de la red VPN, latencia >200ms por 15 min, intrusión confirmada.</p>
-                    <p><strong>Comité de continuidad:</strong> Gerente de Seguridad, Arquitecto, Ingeniero de Redes.</p>
-                </div>
+            <div class="footer-section">
+                <h4>Recursos</h4>
+                <a href="assets/proyecto-completo.pdf" download>
+                    <i class="fas fa-download"></i> Descargar PDF
+                </a>
+                <a href="https://azure.microsoft.com" target="_blank">
+                    <i class="fab fa-microsoft"></i> Azure for Students
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
             </div>
         </div>
-    </section>
-
-    <!-- Sección Equipo y Contacto -->
-    <section id="equipo" class="section">
-        <div class="container">
-            <h2 class="section-title">Equipo del Proyecto</h2>
-            <p class="section-description">Integrantes del equipo de desarrollo y gobierno de TI.</p>
-            
-            <div class="team-members">
-                <div class="member">
-                    <div class="member-img">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Jonathan Treviño Hernández</h3>
-                    <p>Arquitecto de Solución</p>
-                    <p>jtrevinoh@synaptic.com</p>
-                </div>
-                <div class="member">
-                    <div class="member-img">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Rafael Peralta Moreno</h3>
-                    <p>Gerente de Seguridad</p>
-                    <p>rperaltam@synaptic.com</p>
-                </div>
-                <div class="member">
-                    <div class="member-img">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
-                    <h3>Samuel A. Cortés Velázquez</h3>
-                    <p>Ingeniero de Redes</p>
-                    <p>scortesv@synaptic.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="section bg-dark">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-description">Para más información sobre el proyecto, puedes contactarnos.</p>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> contacto@synapticdigital.com</p>
-                <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
-                <p><i class="fas fa-map-marker-alt"></i> Instituto Politécnico Nacional, Ciudad de México</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Proyecto de Gobierno de TI - Synaptic Digital | IT Governance / Gobierno de TI 8CV2</p>
-            <p>Escuela Superior de Cómputo - Instituto Politécnico Nacional &copy; 2025</p>
-            <p>Este sitio web es parte de un proyecto académico.</p>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Synaptic Digital - Proyecto Académico | Desplegado en Azure Static Web Apps</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

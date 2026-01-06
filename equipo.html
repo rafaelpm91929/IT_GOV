@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - Synaptic Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Synaptic Digital</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="estrategia.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Estrategia
+                </a>
+                <a href="servicio.html" class="nav-link">
+                    <i class="fas fa-cogs"></i> Servicio
+                </a>
+                <a href="seguridad.html" class="nav-link">
+                    <i class="fas fa-lock"></i> Seguridad
+                </a>
+                <a href="continuidad.html" class="nav-link">
+                    <i class="fas fa-sync-alt"></i> Continuidad
+                </a>
+                <a href="equipo.html" class="nav-link active">
+                    <i class="fas fa-users"></i> Equipo
+                </a>
+                <a href="assets/proyecto-completo.pdf" class="btn-download" download>
+                    <i class="fas fa-download"></i> PDF
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1><i class="fas fa-users"></i> Nuestro Equipo</h1>
+            <p>Conoce a los integrantes del proyecto y sus responsabilidades</p>
+        </div>
+
+        <!-- Integrantes del Proyecto -->
+        <section class="section">
+            <h2><i class="fas fa-user-tie"></i> Integrantes del Proyecto</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Samuel Alejandro Cortés Velázquez</h3>
+                    <p class="team-role">Ingeniero de Redes L2</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Redes</span>
+                        <span class="skill-tag">Seguridad</span>
+                        <span class="skill-tag">Firewall</span>
+                    </div>
+                    <div class="team-contact">
+                        <p><i class="fas fa-envelope"></i> scortesv@synaptic.com</p>
+                        <p><i class="fas fa-phone"></i> 55-1122-3344</p>
+                        <p class="contact-hours"><i class="fas fa-clock"></i> 24/7 (Guardias)</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Rafael Peralta Moreno</h3>
+                    <p class="team-role">Gerente de Seguridad</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Ciberseguridad</span>
+                        <span class="skill-tag">ISO 27000</span>
+                        <span class="skill-tag">Gestión de Riesgos</span>
+                    </div>
+                    <div class="team-contact">
+                        <p><i class="fas fa-envelope"></i> rperaltam@synaptic.com</p>
+                        <p><i class="fas fa-phone"></i> 55-8765-4321</p>
+                        <p class="contact-hours"><i class="fas fa-clock"></i> 9:00 - 18:00</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Jonathan Treviño Hernández</h3>
+                    <p class="team-role">Arquitecto de Solución</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Arquitectura</span>
+                        <span class="skill-tag">COBIT</span>
+                        <span class="skill-tag">ITIL</span>
+                    </div>
+                    <div class="team-contact">
+                        <p><i class="fas fa-envelope"></i> jtrevinoh@synaptic.com</p>
+                        <p><i class="fas fa-phone"></i> 55-1234-5678</p>
+                        <p class="contact-hours"><i class="fas fa-clock"></i> 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organigrama de Roles -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-sitemap"></i> Organigrama de Roles</h2>
+            <div class="org-chart">
+                <div class="org-level">
+                    <div class="org-node executive">
+                        <h4>Gerente de Seguridad</h4>
+                        <p>Rafael Peralta Moreno</p>
+                        <p class="org-responsibility">Aprobación de políticas y toma de decisiones</p>
+                    </div>
+                </div>
+                
+                <div class="org-connector">
+                    <div class="org-line"></div>
+                    <div class="org-line"></div>
+                </div>
+                
+                <div class="org-level">
+                    <div class="org-node architecture">
+                        <h4>Arquitecto de Solución</h4>
+                        <p>Jonathan Treviño Hernández</p>
+                        <p class="org-responsibility">Diseño técnico y ejecución de recuperación</p>
+                    </div>
+                    
+                    <div class="org-node operations">
+                        <h4>Ingeniero de Redes L2</h4>
+                        <p>Samuel Cortés Velázquez</p>
+                        <p class="org-responsibility">Operación y comunicación con clientes</p>
+                    </div>
+                </div>
+                
+                <div class="org-connector">
+                    <div class="org-line"></div>
+                    <div class="org-line"></div>
+                </div>
+                
+                <div class="org-level">
+                    <div class="org-node support">
+                        <h4>DevOps / Infraestructura</h4>
+                        <p>Staff Especializado</p>
+                        <p class="org-responsibility">Automatización y gestión de infraestructura</p>
+                    </div>
+                    
+                    <div class="org-node support">
+                        <h4>Mesa de Servicio (N1)</h4>
+                        <p>Staff de Soporte</p>
+                        <p class="org-responsibility">Atención inicial y gestión de tickets</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Información de Contacto -->
+        <section class="section">
+            <h2><i class="fas fa-address-book"></i> Información de Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-methods">
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h4>Correo Electrónico</h4>
+                        <p>Para consultas generales y soporte técnico:</p>
+                        <p class="contact-detail">contacto@synaptic.com</p>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>Teléfono</h4>
+                        <p>Línea directa para clientes empresariales:</p>
+                        <p class="contact-detail">+52 55 1234 5678</p>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Soporte 24/7</h4>
+                        <p>Para incidentes críticos y emergencias:</p>
+                        <p class="contact-detail">+52 55 8765 4321 (Guardias)</p>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Ubicación</h4>
+                        <p>Oficina principal en Ciudad de México:</p>
+                        <p class="contact-detail">Av. Instituto Politécnico Nacional, CDMX</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instituciones -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-university"></i> Instituciones</h2>
+            <div class="institution-container">
+                <div class="institution-card">
+                    <div class="institution-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="institution-info">
+                        <h3>Instituto Politécnico Nacional</h3>
+                        <p>Escuela Superior de Cómputo</p>
+                        <p>Programa: IT Governance / Gobierno de TI 8CV2</p>
+                        <p>Proyecto Académico: Servicios VPN/Firewall "Synaptic Digital"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="continuidad.html" class="btn-secondary">
+                <i class="fas fa-arrow-left"></i> Volver a Continuidad
+            </a>
+            <a href="index.html" class="btn-primary">
+                Volver al Inicio <i class="fas fa-home"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Equipo del Proyecto</h4>
+                <p>Integrantes, Roles y Contacto</p>
+                <p>Synaptic Digital - Gobierno de TI</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2025 IPN - ESCOM 8CV2</p>
+                <p>Proyecto Académico</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

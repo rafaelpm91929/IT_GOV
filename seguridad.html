@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad - Synaptic Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Synaptic Digital</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i> Inicio
+                </a>
+                <a href="estrategia.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Estrategia
+                </a>
+                <a href="servicio.html" class="nav-link">
+                    <i class="fas fa-cogs"></i> Servicio
+                </a>
+                <a href="seguridad.html" class="nav-link active">
+                    <i class="fas fa-lock"></i> Seguridad
+                </a>
+                <a href="continuidad.html" class="nav-link">
+                    <i class="fas fa-sync-alt"></i> Continuidad
+                </a>
+                <a href="equipo.html" class="nav-link">
+                    <i class="fas fa-users"></i> Equipo
+                </a>
+                <a href="assets/proyecto-completo.pdf" class="btn-download" download>
+                    <i class="fas fa-download"></i> PDF
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header">
+            <h1><i class="fas fa-user-shield"></i> Seguridad ISO 27000</h1>
+            <p>Matriz CID, Riesgos, BIA Táctico y Controles</p>
+        </div>
+
+        <!-- Introducción CID -->
+        <section class="section">
+            <div class="cid-intro">
+                <h2><i class="fas fa-triangle-exclamation"></i> Enfoque CID de Seguridad</h2>
+                <div class="cid-container">
+                    <div class="cid-pillar">
+                        <div class="cid-icon confidentiality">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Confidencialidad</h3>
+                        <p>Protección de información contra divulgación no autorizada.</p>
+                        <div class="cid-examples">
+                            <span class="cid-tag">Cifrado AES-256</span>
+                            <span class="cid-tag">Control de Acceso</span>
+                            <span class="cid-tag">Políticas de Cero Logs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cid-pillar">
+                        <div class="cid-icon integrity">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <h3>Integridad</h3>
+                        <p>Garantía de que la información no es alterada indebidamente.</p>
+                        <div class="cid-examples">
+                            <span class="cid-tag">Firmas Digitales</span>
+                            <span class="cid-tag">Hash SHA-256</span>
+                            <span class="cid-tag">Control de Cambios</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cid-pillar">
+                        <div class="cid-icon availability">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Disponibilidad</h3>
+                        <p>Acceso a la información cuando es requerida por usuarios autorizados.</p>
+                        <div class="cid-examples">
+                            <span class="cid-tag">Redundancia</span>
+                            <span class="cid-tag">HA Clustering</span>
+                            <span class="cid-tag">Backups</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Matriz de Riesgos -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-table"></i> Matriz de Riesgos (ISO 27000)</h2>
+            <div class="table-container">
+                <table class="risk-table">
+                    <thead>
+                        <tr>
+                            <th>Activo</th>
+                            <th>C</th>
+                            <th>I</th>
+                            <th>D</th>
+                            <th>Justificación</th>
+                            <th>Controles Recomendados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Servidores VPN</td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td><span class="risk-medium">Media</span></td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td>Gestionan túneles cifrados; brecha expone datos</td>
+                            <td>Cifrado AES-256, rotación de llaves, HA</td>
+                        </tr>
+                        <tr>
+                            <td>Firewall Central</td>
+                            <td><span class="risk-medium">Media</span></td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td>Controla todo el tráfico; falla pierde protección</td>
+                            <td>Backup diario, MFA admins, redundancia</td>
+                        </tr>
+                        <tr>
+                            <td>Base de Datos Usuarios</td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td>Contiene credenciales; pérdida impide autenticación</td>
+                            <td>Cifrado en reposo, replicación, PAM</td>
+                        </tr>
+                        <tr>
+                            <td>Plataforma Monitoreo</td>
+                            <td><span class="risk-low">Baja</span></td>
+                            <td><span class="risk-medium">Media</span></td>
+                            <td><span class="risk-medium">Media</span></td>
+                            <td>Visibilidad de red; falla retrasa detección</td>
+                            <td>Alertas redundantes, servidor OOB</td>
+                        </tr>
+                        <tr>
+                            <td>Código Fuente</td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td><span class="risk-high">Alta</span></td>
+                            <td><span class="risk-low">Baja</span></td>
+                            <td>Propiedad intelectual; robo permite exploits</td>
+                            <td>Repositorio privado, SAST, firma digital</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="risk-legend">
+                <div class="legend-item">
+                    <span class="risk-badge high">Alta</span> Impacto Crítico
+                </div>
+                <div class="legend-item">
+                    <span class="risk-badge medium">Media</span> Impacto Moderado
+                </div>
+                <div class="legend-item">
+                    <span class="risk-badge low">Baja</span> Impacto Limitado
+                </div>
+            </div>
+        </section>
+
+        <!-- Infraestructuras Críticas -->
+        <section class="section">
+            <h2><i class="fas fa-server"></i> Infraestructuras Críticas</h2>
+            <div class="critical-infra">
+                <div class="critical-card">
+                    <div class="critical-header">
+                        <h3><i class="fas fa-hub"></i> Concentradores VPN</h3>
+                        <span class="critical-badge critical">Crítica</span>
+                    </div>
+                    <div class="critical-content">
+                        <p><strong>Dependencias:</strong> Ancho de banda, certificados SSL, energía</p>
+                        <p><strong>Impacto:</strong> Interrupción total del servicio al cliente</p>
+                        <div class="critical-actions">
+                            <span class="action-tag">Balanceo de Carga Global</span>
+                            <span class="action-tag">Auto-scaling en nube</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="critical-card">
+                    <div class="critical-header">
+                        <h3><i class="fab fa-aws"></i> Proveedor de Nube</h3>
+                        <span class="critical-badge critical">Crítica</span>
+                    </div>
+                    <div class="critical-content">
+                        <p><strong>Dependencias:</strong> Conectividad a Internet, facturación</p>
+                        <p><strong>Impacto:</strong> Caída masiva de infraestructura virtualizada</p>
+                        <div class="critical-actions">
+                            <span class="action-tag">Arquitectura Multi-Cloud</span>
+                            <span class="action-tag">Región DR Activa</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="critical-card">
+                    <div class="critical-header">
+                        <h3><i class="fas fa-desktop"></i> Portal de Gestión</h3>
+                        <span class="critical-badge high">Alta</span>
+                    </div>
+                    <div class="critical-content">
+                        <p><strong>Dependencias:</strong> Base de datos, servidor web, pasarela de pago</p>
+                        <p><strong>Impacto:</strong> Imposibilidad de alta de nuevos usuarios</p>
+                        <div class="critical-actions">
+                            <span class="action-tag">WAF Dedicado</span>
+                            <span class="action-tag">Backups cada hora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BIA Táctico -->
+        <section class="section section-dark">
+            <h2><i class="fas fa-clipboard-check"></i> BIA Táctico (Business Impact Analysis)</h2>
+            
+            <!-- BIA 1 -->
+            <div class="bia-container">
+                <div class="bia-header">
+                    <h3><i class="fas fa-network-wired"></i> 1. Operación de la Red VPN y Firewall</h3>
+                </div>
+                <div class="bia-content">
+                    <div class="bia-metric">
+                        <h4>MTD</h4>
+                        <p class="bia-value">4 horas</p>
+                        <p class="bia-label">Máximo tiempo tolerable</p>
+                    </div>
+                    <div class="bia-metric">
+                        <h4>RTO</h4>
+                        <p class="bia-value">30 minutos</p>
+                        <p class="bia-label">Tiempo de recuperación</p>
+                    </div>
+                    <div class="bia-metric">
+                        <h4>RPO</h4>
+                        <p class="bia-value">1 hora</p>
+                        <p class="bia-label">Punto de recuperación</p>
+                    </div>
+                </div>
+                <div class="bia-footer">
+                    <p><strong>Dependencias clave:</strong> Nodos VPN, certificados, ancho de banda</p>
+                    <p><strong>Estrategia:</strong> Failover automático a nodo secundario</p>
+                </div>
+            </div>
+            
+            <!-- BIA 2 -->
+            <div class="bia-container">
+                <div class="bia-header">
+                    <h3><i class="fas fa-user-cog"></i> 2. Gestión de Cambios y Reglas</h3>
+                </div>
+                <div class="bia-content">
+                    <div class="bia-metric">
+                        <h4>MTD</h4>
+                        <p class="bia-value">24 horas</p>
+                        <p class="bia-label">Máximo tiempo tolerable</p>
+                    </div>
+                    <div class="bia-metric">
+                        <h4>RTO</h4>
+                        <p class="bia-value">4 horas</p>
+                        <p class="bia-label">Tiempo de recuperación</p>
+                    </div>
+                    <div class="bia-metric">
+                        <h4>RPO</h4>
+                        <p class="bia-value">0 horas</p>
+                        <p class="bia-label">Sincronía inmediata</p>
+                    </div>
+                </div>
+                <div class="bia-footer">
+                    <p><strong>Dependencias:</strong> Portal administración, API firewalls</p>
+                    <p><strong>Estrategia:</strong> Aplicación manual vía CLI por ingenieros N2</p>
+                </div>
+            </div>
+            
+            <!-- BIA 3 -->
+            <div class="bia-container">
+                <div class="bia-header">
+                    <h3><i class="fas fa-eye"></i> 3. Monitoreo y Defensa (SOC)</h3>
+                </div>
+                <div class="bia-content">
+                    <div class="bia-metric">
+                        <h4>MTD</h4>
+                        <p class="bia-value">8 horas</p>
+                        <p class="bia-label">Máximo tiempo tolerable</p>
+                    </div>
+                    <div class="bia-metric">
+                        <h4>RTO</h4>
+                        <p class="bia-value">1 hora</p>
+                        <p class="bia-label">Tiempo de recuperación</p>
+                    </div>
+                    <div class="bia-metric">
+                        <h4>RPO</h4>
+                        <p class="bia-value">1 hora</p>
+                        <p class="bia-label">Logs recientes</p>
+                    </div>
+                </div>
+                <div class="bia-footer">
+                    <p><strong>Dependencias:</strong> SIEM, logs firewall, herramientas análisis</p>
+                    <p><strong>Estrategia:</strong> Monitoreo básico en consolas de proveedores</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inventario de Activos -->
+        <section class="section">
+            <h2><i class="fas fa-boxes"></i> Inventario de Activos Críticos</h2>
+            <div class="inventory-grid">
+                <div class="inventory-card">
+                    <div class="inventory-header high">
+                        <h4><i class="fas fa-server"></i> Firewall Empresarial</h4>
+                    </div>
+                    <div class="inventory-body">
+                        <p><strong>Tipo:</strong> Hardware (Appliance)</p>
+                        <p><strong>Criticidad:</strong> Alta</p>
+                        <p><strong>Descripción:</strong> Dispositivo físico de gestión perimetral</p>
+                    </div>
+                </div>
+                
+                <div class="inventory-card">
+                    <div class="inventory-header high">
+                        <h4><i class="fas fa-cloud"></i> Entorno Cloud (AWS/Azure)</h4>
+                    </div>
+                    <div class="inventory-body">
+                        <p><strong>Tipo:</strong> Infraestructura</p>
+                        <p><strong>Criticidad:</strong> Alta</p>
+                        <p><strong>Descripción:</strong> Servicios en nube para entornos críticos</p>
+                    </div>
+                </div>
+                
+                <div class="inventory-card">
+                    <div class="inventory-header high">
+                        <h4><i class="fas fa-tools"></i> Herramientas de Automatización</h4>
+                    </div>
+                    <div class="inventory-body">
+                        <p><strong>Tipo:</strong> Software (Ansible + Jenkins)</p>
+                        <p><strong>Criticidad:</strong> Alta</p>
+                        <p><strong>Descripción:</strong> CI/CD para automatización de tareas</p>
+                    </div>
+                </div>
+                
+                <div class="inventory-card">
+                    <div class="inventory-header high">
+                        <h4><i class="fas fa-shield-virus"></i> Suite de Ciberseguridad</h4>
+                    </div>
+                    <div class="inventory-body">
+                        <p><strong>Tipo:</strong> Software (Fortinet/Sophos)</p>
+                        <p><strong>Criticidad:</strong> Alta</p>
+                        <p><strong>Descripción:</strong> Firewall UTM y antivirus EDR</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="navigation-buttons">
+            <a href="servicio.html" class="btn-secondary">
+                <i class="fas fa-arrow-left"></i> Volver a Servicio
+            </a>
+            <a href="continuidad.html" class="btn-primary">
+                Continuar a Continuidad <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Seguridad ISO 27000</h4>
+                <p>Matriz CID | Riesgos | BIA | Controles</p>
+                <p>Synaptic Digital - Gobierno de TI</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2025 IPN - ESCOM 8CV2</p>
+                <p>Proyecto Académico</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
