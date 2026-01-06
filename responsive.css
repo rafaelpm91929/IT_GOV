@@ -1,0 +1,319 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Tablets y laptops pequeñas */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background-color: var(--light-surface);
+        width: 80%;
+        max-width: 300px;
+        height: calc(100vh - 70px);
+        padding: 2rem;
+        box-shadow: var(--shadow-lg);
+        transition: right var(--transition-normal);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-link {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .doc-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Específicos para páginas */
+    .bsc-container, .variant-grid, .contact-grid, .cid-container, .critical-infra, .scenario-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .raci-legend, .risk-legend {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .table-container {
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles grandes */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .section {
+        padding: 2rem 0;
+    }
+    
+    .card, .doc-card, .stat-card {
+        padding: 1rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 0.75rem 1rem;
+    }
+    
+    /* Tablas en móviles */
+    .table-container {
+        font-size: 0.8rem;
+    }
+    
+    .data-table th, .data-table td,
+    .raci-table th, .raci-table td,
+    .risk-table th, .risk-table td {
+        padding: 0.5rem;
+    }
+    
+    /* Formularios en móviles */
+    .form-input, .form-textarea, .form-select {
+        padding: 0.5rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 400px) {
+    .logo span {
+        font-size: 1.25rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .btn-download {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Grids muy pequeños */
+    .variant-grid .variant-card,
+    .contact-grid .contact-card,
+    .critical-infra .critical-card {
+        padding: 1rem;
+    }
+}
+
+/* ===== UTILIDADES RESPONSIVAS ===== */
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .hide-on-desktop {
+        display: none !important;
+    }
+}
+
+/* ===== ORIENTACIÓN ===== */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        padding: 1.5rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .nav-menu {
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+}
+
+/* ===== IMPRESIÓN ===== */
+@media print {
+    .navbar, .footer, .btn-download, .hero-buttons, .menu-toggle {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    .card, .doc-card, .stat-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+    
+    .section {
+        padding: 1rem 0;
+    }
+    
+    h1, h2, h3, h4 {
+        color: black;
+    }
+}
+
+/* ===== ACCESIBILIDAD ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== DARK MODE PREFERENCIA DEL SISTEMA ===== */
+@media (prefers-color-scheme: dark) {
+    :root:not(.light-mode) {
+        --light-bg: var(--dark-bg);
+        --light-surface: var(--dark-surface);
+        --light-border: var(--dark-border);
+        --text-dark: var(--text-on-dark);
+        --text-light: rgba(255, 255, 255, 0.7);
+    }
+    
+    :root:not(.light-mode) body {
+        background-color: var(--dark-bg);
+        color: var(--text-on-dark);
+    }
+    
+    :root:not(.light-mode) .card {
+        background-color: var(--dark-surface);
+        color: var(--text-on-dark);
+    }
+    
+    :root:not(.light-mode) h1,
+    :root:not(.light-mode) h2,
+    :root:not(.light-mode) h3,
+    :root:not(.light-mode) h4 {
+        color: white;
+    }
+}
+
+/* ===== HIGH CONTRAST ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0000ff;
+        --primary-dark: #000080;
+        --secondary-color: #008000;
+        --accent-color: #ff0000;
+    }
+    
+    .card, .doc-card, .stat-card {
+        border: 2px solid black;
+    }
+}
